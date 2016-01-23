@@ -13,9 +13,9 @@ module.exports = {
         loaders: [
             {
                 //tell webpack to use jsx-loader for all *.jsx files
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader',
+                loader: 'babel',
                 query: {
                     presets: ['react', 'es2015']
                 }
